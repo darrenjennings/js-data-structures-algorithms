@@ -1,0 +1,23 @@
+{
+	"name": "js-data-structures-algorithms",
+	"description": "Project for showing different data structures and algorithms implemented in Javscript. Not exhaustive, mostly exploratory in nature and for career development. If you see anything wrong, let me know!",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "yarn jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/darrenjennings/js-data-structures-algorithms.git"
+	},
+	"keywords": ["data", "structures", "algorithms", "javascript"],
+	"author": "Darren Jennings",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/darrenjennings/js-data-structures-algorithms/issues"
+	},
+	"homepage": "https://github.com/darrenjennings/js-data-structures-algorithms#readme",
+	"devDependencies": {
+		"jest": "^20.0.4"
+	}
+}
