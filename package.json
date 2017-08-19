@@ -36,7 +36,7 @@
 	},
 	"config": {
 		"ghooks": {
-			"pre-commit": "yarn test && check-coverage"
+			"pre-commit": "yarn test"
 		}
 	}
 }
