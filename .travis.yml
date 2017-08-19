@@ -10,7 +10,7 @@ node_js:
 before_script:
   - npm prune
 script:
-  - yarn test
+  - yarn test:coverage
 after_success:
   - yarn report-coverage
   - yarn semantic-release
