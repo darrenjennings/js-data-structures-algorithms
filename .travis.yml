@@ -12,7 +12,8 @@ before_script:
 script:
   - yarn test
 after_success:
-  - npm run semantic-release
+  - yarn report-coverage
+  - yarn semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
