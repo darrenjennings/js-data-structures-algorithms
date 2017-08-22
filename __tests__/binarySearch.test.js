@@ -3,7 +3,7 @@ const recursive = binarySearch.recursive;
 const non_recursive = binarySearch.non_recursive;
 
 describe("Binary Search", () => {
-  let chop = recursive;
+  let chop = non_recursive;
   test("binary search edge cases", () => {
     expect(chop(3, [])).toBe(-1);
     expect(chop(3, [])).toBe(-1);
@@ -36,7 +36,7 @@ describe("Binary Search", () => {
 });
 
 describe("Binary Search Recursive", () => {
-  let chop = non_recursive;
+  let chop = recursive;
   test("binary search edge cases", () => {
     expect(chop(3, [])).toBe(-1);
     expect(chop(3, [])).toBe(-1);
