@@ -16,26 +16,25 @@ function binarySearchRecursive(n, arr) {
   }
 }
 
-function binarySearch(n, list) {
-  let minIndex = 0;
-  let maxIndex = list.length - 1;
+function binarySearch(n, collection) {
+  const not_found = -1;
 
-  let currentIndex;
-  let currentMidpoint;
+  size = collection.length;
+  left = 0;
+  right = size - 1;
 
-  while (minIndex <= maxIndex) {
-    currentIndex = Math.floor((minIndex + maxIndex) / 2);
-    currentMidpoint = list[currentIndex];
-
-    if (currentMidpoint < n) {
-      minIndex = currentIndex + 1;
-    } else if (currentMidpoint > n) {
-      maxIndex = currentIndex - 1;
+  while (left <= right) {
+    midpoint = Math.floor((left + right) / 2);
+    if (collection[midpoint] < n) {
+      left = midpoint + 1;
+    } else if (collection[midpoint] > n) {
+      right = midpoint - 1;
     } else {
-      return currentIndex;
+      return midpoint;
     }
   }
-  return -1;
+
+  return not_found;
 }
 
 module.exports = {
