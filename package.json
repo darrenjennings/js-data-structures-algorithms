@@ -1,42 +1,42 @@
 {
-	"name": "js-data-structures-algorithms",
-	"description": "Project for showing different data structures and algorithms implemented in Javscript. Not exhaustive, mostly exploratory in nature and for career development. If you see anything wrong, let me know!",
-	"version": "0.0.0-development",
-	"main": "index.js",
-	"scripts": {
-		"report-coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
-		"commit": "git-cz",
-		"test": "yarn jest",
-		"test:coverage": "yarn jest -- --coverage",
-		"semantic-release": "semantic-release pre && npm publish && semantic-release post"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/darrenjennings/js-data-structures-algorithms.git"
-	},
-	"keywords": ["data", "structures", "algorithms", "javascript"],
-	"author": "Darren Jennings",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/darrenjennings/js-data-structures-algorithms/issues"
-	},
-	"homepage": "https://github.com/darrenjennings/js-data-structures-algorithms#readme",
-	"devDependencies": {
-		"codecov": "^2.3.0",
-		"codecov.io": "^0.1.6",
-		"commitizen": "^2.9.6",
-		"cz-conventional-changelog": "^2.0.0",
-		"ghooks": "^2.0.0",
-		"jest": "^20.0.4",
-		"nyc": "^11.1.0",
-		"semantic-release": "^7.0.1"
-	},
-	"czConfig": {
-		"path": "cz-conventional-changelog"
-	},
-	"config": {
-		"ghooks": {
-			"pre-commit": "yarn test"
-		}
-	}
+  "name": "js-data-structures-algorithms",
+  "description": "Project for showing different data structures and algorithms implemented in Javscript. Not exhaustive, mostly exploratory in nature and for career development. If you see anything wrong, let me know!",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "scripts": {
+    "report-coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
+    "commit": "git-cz",
+    "test": "yarn jest",
+    "test:coverage": "yarn jest -- --coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darrenjennings/js-data-structures-algorithms.git"
+  },
+  "keywords": ["data", "structures", "algorithms", "javascript"],
+  "author": "Darren Jennings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darrenjennings/js-data-structures-algorithms/issues"
+  },
+  "homepage": "https://github.com/darrenjennings/js-data-structures-algorithms#readme",
+  "devDependencies": {
+    "codecov": "^2.3.0",
+    "codecov.io": "^0.1.6",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "ghooks": "^2.0.0",
+    "jest": "^20.0.4",
+    "nyc": "^11.1.0",
+    "semantic-release": "^7.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "yarn test"
+    }
+  }
 }
