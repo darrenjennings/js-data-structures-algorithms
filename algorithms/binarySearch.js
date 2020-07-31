@@ -19,12 +19,12 @@ function binarySearchRecursive(n, arr) {
 function binarySearch(n, collection) {
   const not_found = -1;
 
-  size = collection.length;
-  left = 0;
-  right = size - 1;
+  let size = collection.length;
+  let left = 0;
+  let right = size - 1;
 
   while (left <= right) {
-    midpoint = Math.floor((left + right) / 2);
+    let midpoint = Math.floor((left + right) / 2);
     if (collection[midpoint] < n) {
       left = midpoint + 1;
     } else if (collection[midpoint] > n) {

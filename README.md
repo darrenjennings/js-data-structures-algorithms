@@ -15,5 +15,5 @@ yarn install
 
 ### Testing
 ```
-yarn jest
+yarn test
 ```
