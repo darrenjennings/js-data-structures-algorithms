@@ -35,7 +35,7 @@
     "ghooks": "^2.0.0",
     "jest": "^26.2.1",
     "nyc": "^11.1.0",
-    "semantic-release": "^7.0.1"
+    "semantic-release": "^17.2.3"
   },
   "config": {
     "commitizen": {
